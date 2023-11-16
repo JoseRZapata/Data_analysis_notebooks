@@ -12,6 +12,8 @@ pandas = "^2.1.1"
 plotly = "^5.17.0"
 numpy = "^1.24.3"
 chart-studio = "^1.1.0"
+seaborn = "^0.13.0"
+pyarrow = "^14.0.1"
 
 
 [tool.poetry.group.dev.dependencies]

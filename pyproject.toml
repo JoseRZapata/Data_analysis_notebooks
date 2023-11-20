@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "covid-plots"
+name = "data-analysis"
 version = "0.1.0"
-description = "plotly graphs of covid data"
-authors = ["Jose R. Zapata <jjrzg@hotmail.com>"]
+description = "Data analysis notebooks with python"
+authors = ["Jose R. Zapata "]
 readme = "README.md"
-packages = [{include = "covid_plots"}]
+packages = [{include = "data_analysis"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9, <3.11"

@@ -19,7 +19,7 @@ toml = "^0.10.2"
 pre-commit = "^3.6.0"
 
 # Standardized Developer Workflow Orchestration
-cruft = "^2.15.0" # Automated Cookiecutter template synchronization
+cruft = {extras = ["pyproject"], version = "^2.15.0"} # Automated Cookiecutter template synchronization
 jupyter = "^1.0.0"
 matplotlib = "^3.8.2"
 plotly = "^5.18.0"

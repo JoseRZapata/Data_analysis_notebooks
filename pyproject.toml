@@ -8,10 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 hydra-core = "^1.1.1"
-#
-# Jupyter Notebook
-jupyter = "^1.0.0"
-#
+pandas = "^2.1.4"
+numpy = "^1.26.3"
+pyarrow = "^14.0.2"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -19,7 +18,11 @@ pre-commit = "^3.6.0"
 
 # Standardized Developer Workflow Orchestration
 cruft = "^2.15.0" # Automated Cookiecutter template synchronization
-
+jupyter = "^1.0.0"
+matplotlib = "^3.8.2"
+plotly = "^5.18.0"
+seaborn = "^0.13.1"
+ipywidgets = "^8.1.1"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.4"

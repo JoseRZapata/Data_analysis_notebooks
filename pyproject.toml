@@ -28,7 +28,6 @@ ipywidgets = "^8.1.1"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.4"
-coverage = "^7.4.0"
 pytest-cov = "^4.1.0"
 pytest-mock = "^3.12.0"
 

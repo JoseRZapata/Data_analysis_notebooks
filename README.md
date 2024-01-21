@@ -1,5 +1,9 @@
 # Data analysis notebooks with python
 
+[![Test](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml/badge.svg)](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml)
+
+[![codecov](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks/graph/badge.svg?token=27YGHC6I19)](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks)
+
 Jose Ricardo Zapata - <https://joserzapata.github.io/>
 
 [![Invitame a un Cafe](https://img.buymeacoffee.com/button-api/?text=Invítame+a+un+Café&emoji=&slug=joserzapata&button_colour=328cc1&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/joserzapata)

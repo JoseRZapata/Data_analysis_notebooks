@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 
 """[Actualizacion Bar Chart Race]
 

@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 
 """[Visualizacion del Coronavirus (COVID19) Mundial]
 

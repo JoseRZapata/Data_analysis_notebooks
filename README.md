@@ -3,7 +3,7 @@
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json)](https://github.com/charliermarsh/ruff)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![Test](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml/badge.svg)](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml)
+[![Test](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks/graph/badge.svg?token=27YGHC6I19)](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks)
 
 Jose Ricardo Zapata - <https://joserzapata.github.io/>

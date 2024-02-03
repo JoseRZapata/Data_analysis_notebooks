@@ -6,6 +6,7 @@ repos:
       - id: end-of-file-fixer
         exclude_types: [jupyter]
       - id: check-yaml
+        exclude: ^mkdocs\.yml$
       - id: check-case-conflict
       - id: debug-statements
       - id: detect-private-key
@@ -34,7 +35,7 @@ repos:
           - --config-file=.code_quality/mypy.ini
 
   - repo: https://github.com/PyCQA/bandit
-    rev: 1.7.6
+    rev: 1.7.7
     hooks:
       - id: bandit
         args:
@@ -42,7 +43,10 @@ repos:
           - .code_quality/bandit.yaml
 
   - repo: https://github.com/Yelp/detect-secrets
-    rev: v1.3.0
+    rev: v1.4.0
     hooks:
       - id: detect-secrets
-        exclude: ^(poetry\.lock|\.cruft\.json)$
+        exclude: ^(poetry\.lock|\.cruft\.json|.*\.ipynb)$
+      - id: detect-secrets
+        name: 'detect-secrets-jupyter'
+        args: ['--exclude-files', '.*[^i][^p][^y][^n][^b]$', '--exclude-lines', '"(hash|id|image/\w+)":.*', ]

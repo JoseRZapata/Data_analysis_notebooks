@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/JoseRZapata/data-science-project-template",
-  "commit": "86a445bdbae2d34ca40aa83c93c666df11e3e1a8",
+  "commit": "fc6087428b8ef8563ea1af905cd2404d90c289d3",
   "checkout": null,
   "context": {
     "cookiecutter": {

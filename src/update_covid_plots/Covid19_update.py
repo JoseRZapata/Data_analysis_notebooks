@@ -132,7 +132,7 @@ fig = px.bar(
     color_discrete_sequence=["teal", "navy", "green", "coral"],
     height=500,
     width=600,
-    title=f"Total de Casos Mundiales de COVID 19 - {str(world.iloc[-1,0])}",
+    title=f"Total de Casos Mundiales de COVID 19 - {world.iloc[-1,0]!s}",
 )
 fig.update_traces(textposition="outside")  # poner los valores de las barras fuera
 fig.add_annotation(
@@ -316,7 +316,9 @@ paises = df1.iloc[-1, 1:]  # obtener la serie sin el primer dato, fecha
 paises.sort_values(ascending=False, inplace=True)
 top = 10
 # keep top countries
-df1 = df1[["Fecha"] + list(paises[:top].index)]
+columnas = ["Fecha"]
+columnas.extend(list(paises[:top].index))
+df1 = df1[columnas]
 
 if api_key:
     # se toman la serie de tiempo cada 7 dias, por que las graficas

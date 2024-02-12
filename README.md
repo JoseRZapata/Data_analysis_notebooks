@@ -11,8 +11,8 @@ Jose Ricardo Zapata - <https://joserzapata.github.io/>
 [![Invitame a un Cafe](https://img.buymeacoffee.com/button-api/?text=Invítame+a+un+Café&emoji=&slug=joserzapata&button_colour=328cc1&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/joserzapata)
 
 - Covid data plots with ploty
-   - [Notebook](https://github.com/JoseRZapata/Data_analysis_notebooks/blob/main/notebooks/01-Covid19_visualization/01-Covid19_Visualizacion_es.ipynb)
-   - [Blog post](https://joserzapata.github.io/post/covid19-visualizacion/)
+  - [Notebook](https://github.com/JoseRZapata/Data_analysis_notebooks/blob/main/notebooks/01-Covid19_visualization/01-Covid19_Visualizacion_es.ipynb)
+  - [Blog post](https://joserzapata.github.io/post/covid19-visualizacion/)
 
 ## Repo cookiecutter Template
 
@@ -50,18 +50,11 @@ data-science-project-template - <https://github.com/JoseRZapata/data-science-pro
 │   └── workflows
 │       ├── docs.yml                    # github action to build documentation (mkdocs)
 │       ├── pre-commit_autoupdate.yml   # github action update pre-commit hooks
-│       └── test.yml
+│       └── test.yml                    # github action to run tests
 ├── .gitignore                          # files to ignore in git
 ├── Makefile                            # useful commands to setup environment,
 ├── models                              # store final models
-├── notebooks
-│   ├── 1-data                          # notebooks for data extraction and cleaning
-│   ├── 2-exploration                   # notebooks for data exploration
-│   ├── 3-analysis                      # notebooks for data analysis
-│   ├── 4-feat_eng                      # notebooks for feature engineering
-│   ├── 5-models                        # notebooks for model training
-│   ├── 6-evaluation                    # notebooks for model evaluation
-│   ├── 7-deploy                        # notebooks for model deployment
+├── notebooks                           # All notebooks with analysis
 │   ├── notebook_template.ipynb         # template for notebooks
 │   └── README.md                       # information about the notebooks
 ├── .pre-commit-config.yaml             # configuration for pre-commit hooks
@@ -73,3 +66,42 @@ data-science-project-template - <https://github.com/JoseRZapata/data-science-pro
     ├── extensions.json                 # list of recommended extensions
     └── settings.json                   # vscode settings
 ```
+
+## Credits
+
+This project was generated from [@JoseRZapata]'s [data science project template] template.
+
+---
+[@JoseRZapata]: https://github.com/JoseRZapata
+
+[bandit]: https://github.com/PyCQA/bandit
+[codecov]: https://codecov.io/
+[Cookiecutter]:https://cookiecutter.readthedocs.io/stable/
+[coverage.py]: https://coverage.readthedocs.io/
+[Cruft]: https://cruft.github.io/cruft/
+[data science project template]: https://github.com/JoseRZapata/data-science-project-template
+[Data structure]: Data_analysis_notebooks/data/README.md
+[deepcheck]:https://deepcheck.io/
+[dependabot]: https://github.com/dependabot/dependabot-core
+[depy]:https://fpgmaas.github.io/deptry/
+[DVC]:https://dvc.org/
+[github actions]: https://github.com/features/actions
+[hydra]: https://hydra.cc/
+[Jupyter]:https://jupyter.org/
+[Makefile]: https://www.gnu.org/software/make/manual/make.html
+[MlFlow]:https://www.mlflow.org/
+[Mypy]: http://mypy-lang.org/
+[Notebook template]: Data_analysis_notebooks/notebooks/notebook_template.ipynb
+[NumPy]:https://numpy.org/
+[OmegaConf]: https://omegaconf.readthedocs.io/en/latest/
+[Pandas]:https://pandas.pydata.org/
+[pandera]:(https://pandera.readthedocs.io/en/stable/)
+[Poetry]: https://python-poetry.org/
+[pre-commit]: https://pre-commit.com/
+[Pull Request template]: Data_analysis_notebooks/.github/pull_request_template.md
+[Pyenv]: https://github.com/pyenv/pyenv
+[pypi]: https://pypi.org/
+[Pytest]: https://docs.pytest.org/en/latest/
+[pyupgrade]: https://github.com/asottile/pyupgrade
+[Ruff]: https://docs.astral.sh/ruff/
+[scikit-learn]:https://scikit-learn.org/

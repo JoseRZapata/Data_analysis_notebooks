@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "Data analysis notebooks with python"
+version = "0.1.0"
+description = "Data analysis notebooks with python"
+authors = [
+    "Jose R. Zapata <https://joserzapata.github.io/>",
+]
+readme = "README.md"
+documentation = "https://JoseRZapata.github.io/Data_analysis_notebooks"
+repository = "https://github.com/JoseRZapata/Data_analysis_notebooks"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+hydra-core = "^1.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
+
+# Standardized Developer Workflow Orchestration
+cruft = {extras = ["pyproject"], version = "^2.15.0"} # Automated Cookiecutter template synchronization
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+
+#
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.virtualenvs]
+in-project = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.coverage.paths]
+source = ["src"]

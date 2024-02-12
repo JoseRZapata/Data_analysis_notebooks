@@ -1,0 +1,34 @@
+{
+  "template": "https://github.com/JoseRZapata/data-science-project-template",
+  "commit": "36035d5461445394b1a39471c2cac44977777df8",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "Data analysis notebooks with python",
+      "repo_name": "Data_analysis_notebooks",
+      "github_username": "JoseRZapata",
+      "author_name": "Jose R. Zapata",
+      "author_email": "https://joserzapata.github.io/",
+      "description": "Data analysis notebooks with python",
+      "compatible_python_versions": "3.11",
+      "mkdocs": false,
+      "codecov": true,
+      "license": "MIT License",
+      "_copy_without_render": [
+        ".code_quality/*",
+        ".vscode/*",
+        "config/*",
+        "data/*",
+        "src/*",
+        "tests/*",
+        ".editorconfig",
+        ".pre-commit-config.yaml",
+        "codecov.yaml",
+        "docs/*",
+        "Makefile"
+      ],
+      "_template": "https://github.com/JoseRZapata/data-science-project-template"
+    }
+  },
+  "directory": null
+}

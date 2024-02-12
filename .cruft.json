@@ -9,7 +9,7 @@
       "author_name": "Jose R. Zapata",
       "description": "Data analysis notebooks with python",
       "license": "MIT License",
-      "compatible_python_versions": "^3.10",
+      "compatible_python_versions": "3.10",
       "jupyter_notebook_project": "yes",
       "_template": "https://github.com/JoseRZapata/data-science-project-template"
     }

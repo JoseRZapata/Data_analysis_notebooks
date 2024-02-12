@@ -41,13 +41,7 @@ pre-commit_update: ## Update pre-commit hooks
 	poetry run pre-commit clean
 	poetry run pre-commit autoupdate
 
-####----Docs----####
-docs_view: ## Build and serve the documentation
-	@echo "🚀 Viewing documentation..."
-	@poetry run mkdocs serve
-
-docs_test: ## Test if documentation can be built without warnings or errors
-	@poetry run mkdocs build -s
+#
 
 ####----Checks----####
 check: ## Run code quality tools with pre-commit hooks.

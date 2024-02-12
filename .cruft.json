@@ -6,11 +6,14 @@
     "cookiecutter": {
       "project_name": "Data analysis notebooks with python",
       "repo_name": "Data_analysis_notebooks",
+      "github_username": "JoseRZapata",
       "author_name": "Jose R. Zapata",
+      "author_email":"https://joserzapata.github.io/",
       "description": "Data analysis notebooks with python",
-      "license": "MIT License",
       "compatible_python_versions": "3.10",
-      "jupyter_notebook_project": "yes",
+      "mkdocs": false,
+      "codecov": true,
+      "license": "MIT License",
       "_template": "https://github.com/JoseRZapata/data-science-project-template"
     }
   },

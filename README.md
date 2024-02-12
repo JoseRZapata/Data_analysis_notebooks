@@ -3,53 +3,22 @@
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json)](https://github.com/charliermarsh/ruff)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![Test](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks/graph/badge.svg?token=27YGHC6I19)](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks)
 
-## ✨ Features and Tools
+Jose Ricardo Zapata - <https://joserzapata.github.io/>
 
-Information about all the features and tools used in this project: <https://joserzapata.github.io/data-science-project-template/#features-and-tools>
+[![Invitame a un Cafe](https://img.buymeacoffee.com/button-api/?text=Invítame+a+un+Café&emoji=&slug=joserzapata&button_colour=328cc1&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/joserzapata)
 
-Features                                     | Package  | Why?
- ---                                         | ---      | ---
-Dependencies and env                         | [Poetry] | [article](https://mathdatasimplified.com/2023/06/12/poetry-a-better-way-to-manage-python-dependencies/)
-Project configuration file                   | [Hydra]  |  [article](https://mathdatasimplified.com/2023/05/25/stop-hard-coding-in-a-data-science-project-use-configuration-files-instead/)
-Lint - Format, sort imports  (Code Quality)  | [Ruff] | [article](https://www.sicara.fr/blog-technique/boost-code-quality-ruff-linter)
-Static type checking                         | [Mypy] | [article](https://python.plainenglish.io/does-python-need-types-79753b88f521)
-code security                                | [bandit] | [article](https://blog.bytehackr.in/secure-your-python-code-with-bandit)
-Code quality & security each commit          | [pre-commit] | [article](https://dev.to/techishdeep/maximize-your-python-efficiency-with-pre-commit-a-complete-but-concise-guide-39a5)
-Test code                                    | [Pytest] | [article](https://realpython.com/pytest-python-testing/)
-Test coverage                                | [coverage.py] [codecov] | [article](https://martinxpn.medium.com/test-coverage-in-python-with-pytest-86-100-days-of-python-a3205c77296)
-Project Template                             | [Cruft] or [Cookiecutter] | [article](https://medium.com/@bctello8/standardizing-dbt-projects-at-scale-with-cookiecutter-and-cruft-20acc4dc3f74)
-Folder structure for data science projects   | [Data structure] | [article](https://towardsdatascience.com/the-importance-of-layered-thinking-in-data-engineering-a09f685edc71)
-Template for pull requests                   | [Pull Request template] | [article](https://www.awesomecodereviews.com/pull-request-template/)
-Template for notebooks                       | [Notebook template] |
+- Covid data plots with ploty
+  - [Notebook](https://github.com/JoseRZapata/Data_analysis_notebooks/blob/main/notebooks/01-Covid19_visualization/01-Covid19_Visualizacion_es.ipynb)
+  - [Blog post](https://joserzapata.github.io/post/covid19-visualizacion/)
 
-## Set up the environment
+## Repo cookiecutter Template
 
-1. Set up the environment:
+This repository uses the:
 
-    ```bash
-    make init_env
-    ```
-
-1. Install libraries for data science and machine learning:
-
-    ```bash
-    make install_all_libs
-    ```
-
-## Install dependencies
-
-To install all dependencies for this project, run:
-
-```bash
-poetry install
-```
-
-To install a new package, run:
-
-```bash
-poetry add <package-name>
-```
+data-science-project-template - <https://github.com/JoseRZapata/data-science-project-template>
 
 ## 🗃️ Project structure
 
@@ -85,14 +54,7 @@ poetry add <package-name>
 ├── .gitignore                          # files to ignore in git
 ├── Makefile                            # useful commands to setup environment,
 ├── models                              # store final models
-├── notebooks
-│   ├── 1-data                          # notebooks for data extraction and cleaning
-│   ├── 2-exploration                   # notebooks for data exploration
-│   ├── 3-analysis                      # notebooks for data analysis
-│   ├── 4-feat_eng                      # notebooks for feature engineering
-│   ├── 5-models                        # notebooks for model training
-│   ├── 6-evaluation                    # notebooks for model evaluation
-│   ├── 7-deploy                        # notebooks for model deployment
+├── notebooks                           # All notebooks with analysis
 │   ├── notebook_template.ipynb         # template for notebooks
 │   └── README.md                       # information about the notebooks
 ├── .pre-commit-config.yaml             # configuration for pre-commit hooks

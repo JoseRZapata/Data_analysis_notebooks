@@ -15,7 +15,6 @@ Actualizaciones:
 - 31/May/2020 bar chart race
 """
 
-
 import numpy as np
 import pandas as pd
 

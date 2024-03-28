@@ -1,8 +1,10 @@
 # Data analysis notebooks with python
 
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json)](https://github.com/charliermarsh/ruff)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/charliermarsh/ruff)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+[![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
 [![Test](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks/graph/badge.svg?token=27YGHC6I19)](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks)
 
@@ -26,7 +28,6 @@ data-science-project-template - <https://github.com/JoseRZapata/data-science-pro
 .
 ├── codecov.yml                         # configuration for codecov
 ├── .code_quality
-│   ├── bandit.yaml                     # bandit configuration
 │   ├── mypy.ini                        # mypy configuration
 │   └── ruff.toml                       # ruff configuration
 ├── data
@@ -47,14 +48,15 @@ data-science-project-template - <https://github.com/JoseRZapata/data-science-pro
 │   │       └── action.yml              # github action to setup python environment
 │   ├── dependabot.md                   # github action to update dependencies
 │   ├── pull_request_template.md        # template for pull requests
-│   └── workflows
-│       ├── docs.yml                    # github action to build documentation (mkdocs)
-│       ├── pre-commit_autoupdate.yml   # github action update pre-commit hooks
-│       └── test.yml                    # github action to run tests
+│   └── workflows                       # github actions workflows
+│       ├── ci.yml                      # run continuous integration (tests, pre-commit, etc.)
+│       ├── dependency_review.yml       # review dependencies
+│       ├── docs.yml                    # build documentation (mkdocs)
+│       └── pre-commit_autoupdate.yml   # update pre-commit hooks
 ├── .gitignore                          # files to ignore in git
-├── Makefile                            # useful commands to setup environment,
+├── Makefile                            # useful commands to setup environment, run tests, etc.
 ├── models                              # store final models
-├── notebooks                           # All notebooks with analysis
+├── notebooks                           # All notebooks with analysis    
 │   ├── notebook_template.ipynb         # template for notebooks
 │   └── README.md                       # information about the notebooks
 ├── .pre-commit-config.yaml             # configuration for pre-commit hooks
@@ -64,6 +66,7 @@ data-science-project-template - <https://github.com/JoseRZapata/data-science-pro
 ├── tests                               # test code for your project
 └── .vscode                             # vscode configuration
     ├── extensions.json                 # list of recommended extensions
+    ├── launch.json                     # vscode launch configuration
     └── settings.json                   # vscode settings
 ```
 

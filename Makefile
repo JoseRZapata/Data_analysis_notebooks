@@ -2,7 +2,7 @@
 
 ####----Basic configurations----####
 
-init_env: ## Install dependencies with poetry and activate env
+install: ## Install dependencies with poetry and activate env
 	@echo "🚀 Creating virtual environment using pyenv and poetry"
 	poetry install
 	@echo "🚀 Installing pre-commit..."
@@ -34,6 +34,10 @@ install_mlops_libs: ## Install dvc, mlflow
 test: ## Test the code with pytest and coverage
 	@echo "🚀 Testing code: Running pytest"
 	@poetry run pytest --cov
+
+test_verbose: ## Test the code with pytest and coverage in verbose mode
+	@echo "🚀 Testing code: Running pytest in verbose mode"
+	@poetry run pytest --no-header -v --cov
 
 ####----Pre-commit----####
 pre-commit_update: ## Update pre-commit hooks

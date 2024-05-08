@@ -9,6 +9,8 @@ readme = "README.md"
 documentation = "https://JoseRZapata.github.io/Data_analysis_notebooks"
 repository = "https://github.com/JoseRZapata/Data_analysis_notebooks"
 
+package-mode = false
+
 [tool.poetry.dependencies]
 python = "^3.11"
 hydra-core = "^1.1.1"

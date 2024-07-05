@@ -5,6 +5,10 @@ data/**
 !data/**/
 !data/README.md
 
+# except this folder
+data/datasets/*
+
+
 # also keep all .gitkeep files
 !.gitkeep
 

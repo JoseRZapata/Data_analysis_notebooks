@@ -1,14 +1,24 @@
 {
   "[python]": {
-
-    "editor.codeActionsOnSave": {
-      "source.fixAll.ruff": "explicit",
-      "source.organizeImports.ruff": "explicit",
-    },
     "editor.formatOnSave": true,
-        "editor.rulers": [
-      100
-    ]
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.rulers": [100]
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "notebook.codeActionsOnSave": {
+      "notebook.source.fixAll": "explicit",
+      "notebook.source.organizeImports": "explicit"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
+    }
   },
   "files.exclude": {
     "**/__pycache__": true
@@ -19,7 +29,6 @@
   "editor.inlineSuggest.enabled": true,
   "editor.formatOnType": true,
   "git.autofetch": true,
-  "editor.defaultFormatter": "charliermarsh.ruff",
   "python.terminal.activateEnvInCurrentTerminal": true,
   "python.testing.pytestArgs": [
     "tests"
@@ -32,5 +41,14 @@
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "markdownlint.config": {
     "MD007": {"indent": 4}
-  }
+  },
+  "ruff.lint.args": [
+    "--config=.code_quality/ruff.toml"
+  ],
+  "ruff.format.args": [
+    "--config=.code_quality/ruff.toml"
+  ],
+  "mypy-type-checker.args": [
+    "--config-file=.code_quality/mypy.ini"
+  ]
 }

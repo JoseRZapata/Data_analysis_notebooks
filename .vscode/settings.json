@@ -50,5 +50,11 @@
   ],
   "mypy-type-checker.args": [
     "--config-file=.code_quality/mypy.ini"
+  ],
+  "cSpell.ignorePaths": [
+    ".venv/**",
+    ".vscode/**",
+    ".git",
+    ".code_quality/**",
   ]
 }

@@ -120,9 +120,7 @@ world["Activos"] = active_group.iloc[:, 1:].sum(1)
 
 # %%
 temp = pd.DataFrame(world.iloc[-1, :]).T
-tm = temp.melt(
-    id_vars="Fecha", value_vars=["Confirmados", "Activos", "Recuperados", "Muertos"]
-)
+tm = temp.melt(id_vars="Fecha", value_vars=["Confirmados", "Activos", "Recuperados", "Muertos"])
 fig = px.bar(
     tm,
     x="variable",
@@ -232,9 +230,7 @@ if api_key:
 #
 
 # %%
-world_melt = world.melt(
-    id_vars="Fecha", value_vars=list(world.columns)[1:], var_name=None
-)
+world_melt = world.melt(id_vars="Fecha", value_vars=list(world.columns)[1:], var_name=None)
 
 fig = px.line(
     world_melt,
@@ -373,9 +369,7 @@ if api_key:
     # se toman la serie de tiempo cada 30 dias, por que las graficas
     # grandes no se pueden subir a chart-studio con subscripcion gratuita
     confirmed_melt = confirmed_group.iloc[::-30].iloc[::-1].melt(id_vars="date").copy()
-    confirmed_melt.rename(
-        columns={"value": "Confirmados", "date": "Fecha"}, inplace=True
-    )
+    confirmed_melt.rename(columns={"value": "Confirmados", "date": "Fecha"}, inplace=True)
 
 confirmed_melt["Fecha"] = pd.to_datetime(confirmed_melt["Fecha"])
 confirmed_melt["Fecha"] = confirmed_melt["Fecha"].dt.strftime("%m/%d/%Y")
@@ -397,9 +391,7 @@ fig = px.scatter_geo(
     title="Contagiados COVID 19 en el Tiempo",
 )
 fig.update(layout_coloraxis_showscale=False)
-fig.add_annotation(
-    x=0.5, y=-0.1, text="https://joserzapata.github.io/", showarrow=False
-)
+fig.add_annotation(x=0.5, y=-0.1, text="https://joserzapata.github.io/", showarrow=False)
 # grabar grafica en chart-studio si se proporciona el api-key
 if api_key:
     py.plot(fig, filename="mapa_evolucion_temporal", auto_open=False)
@@ -415,13 +407,9 @@ colombia["Fecha"] = confirmed_group["date"]
 colombia["Confirmados"] = confirmed_group["Colombia"]
 colombia["Muertos"] = death_group["Colombia"]
 colombia["Recuperados"] = recovered_group["Colombia"]
-colombia["Activos"] = (
-    colombia["Confirmados"] - colombia["Recuperados"] - colombia["Muertos"]
-)
+colombia["Activos"] = colombia["Confirmados"] - colombia["Recuperados"] - colombia["Muertos"]
 
-df_melt3 = colombia.melt(
-    id_vars="Fecha", value_vars=list(colombia.columns)[1:], var_name=None
-)
+df_melt3 = colombia.melt(id_vars="Fecha", value_vars=list(colombia.columns)[1:], var_name=None)
 fig = px.line(
     df_melt3,
     x="Fecha",

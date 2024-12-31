@@ -20,7 +20,7 @@ hydra-core = "^1.1.1"
 pre-commit = "^4.0.1"
 
 # Standardized Developer Workflow Orchestration
-cruft = {extras = ["pyproject"], version = "^2.15.0"} # Automated Cookiecutter template synchronization
+cruft = {extras = ["pyproject"], version = "^2.16.0"} # Automated Cookiecutter template synchronization
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"

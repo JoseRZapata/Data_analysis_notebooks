@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/JoseRZapata/data-science-project-template",
-  "commit": "10b9e96973c435a2ff9e57dd7b17aae0f5463cfd",
+  "commit": "374ccbc27744318c3fdec9f2130d0e127faf818b",
   "checkout": null,
   "context": {
     "cookiecutter": {
@@ -26,7 +26,8 @@
         "codecov.yaml",
         "docs/*"
       ],
-      "_template": "https://github.com/JoseRZapata/data-science-project-template"
+      "_template": "https://github.com/JoseRZapata/data-science-project-template",
+      "_commit": "374ccbc27744318c3fdec9f2130d0e127faf818b"
     }
   },
   "directory": null

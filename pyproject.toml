@@ -1,37 +1,36 @@
-[tool.poetry]
-name = "Data analysis notebooks with python"
-version = "0.1.0"
+[project]
+name = "Data_analysis_notebooks"
+version = "0.2.0"
 description = "Data analysis notebooks with python"
-authors = [
-    "Jose R. Zapata <https://joserzapata.github.io/>",
-]
+authors = [{ name = "Jose R. Zapata", email = "https://joserzapata.github.io/" }]
+requires-python = "~=3.11"
 readme = "README.md"
-documentation = "https://JoseRZapata.github.io/Data_analysis_notebooks"
-repository = "https://github.com/JoseRZapata/Data_analysis_notebooks"
+dependencies = [
+    "numpy>=2.2.1",
+    "pandas>=2.2.3",
+]
 
-package-mode = false
+[project.urls]
+Repository = "https://github.com/JoseRZapata/Data_analysis_notebooks"
+Documentation = "https://JoseRZapata.github.io/Data_analysis_notebooks"
 
-[tool.poetry.dependencies]
-python = "^3.11"
-hydra-core = "^1.1.1"
+[dependency-groups]
+dev = [
+    "pre-commit>=4.0.1,<5",
+    "pytest>=8.3.4,<9",
+    "pytest-cov>=6.0.0,<7",
+    "pytest-mock>=3.14.0,<4",
+    "cruft[pyproject]>=2.16.0,<3",
+    "jupyter>=1.1.1",
+    "plotly>=5.24.1",
+]
 
-
-[tool.poetry.group.dev.dependencies]
-pre-commit = "^4.0.1"
-
-# Standardized Developer Workflow Orchestration
-cruft = {extras = ["pyproject"], version = "^2.16.0"} # Automated Cookiecutter template synchronization
-
-[tool.poetry.group.test.dependencies]
-pytest = "^8.3.4"
-pytest-cov = "^6.0.0"
-pytest-mock = "^3.14.0"
-
-#
+[tool.uv]
+package = false
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.virtualenvs]
 in-project = true

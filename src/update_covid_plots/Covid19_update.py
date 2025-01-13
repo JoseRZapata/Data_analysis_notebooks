@@ -130,7 +130,7 @@ fig = px.bar(
     color_discrete_sequence=["teal", "navy", "green", "coral"],
     height=500,
     width=600,
-    title=f"Total de Casos Mundiales de COVID 19 - {world.iloc[-1,0]!s}",
+    title=f"Total de Casos Mundiales de COVID 19 - {world.iloc[-1, 0]!s}",
 )
 fig.update_traces(textposition="outside")  # poner los valores de las barras fuera
 fig.add_annotation(
@@ -238,7 +238,7 @@ fig = px.line(
     y="value",
     color="variable",
     color_discrete_sequence=["teal", "green", "coral", "navy"],
-    title=f"Total de Casos en el tiempo de COVID 19 - {world.iloc[-1,0]}",
+    title=f"Total de Casos en el tiempo de COVID 19 - {world.iloc[-1, 0]}",
 )
 for n in list(world.columns)[1:]:
     fig.add_annotation(
@@ -330,7 +330,7 @@ fig = px.line(
     color="Country/Region",
     color_discrete_sequence=px.colors.qualitative.G10,
     width=900,
-    title=f"Total Casos Confirmados de COVID 19 por Pais (Top 10) - {world.iloc[-1,0]}",
+    title=f"Total Casos Confirmados de COVID 19 por Pais (Top 10) - {world.iloc[-1, 0]}",
 )
 # top paises mas infectados
 
@@ -416,7 +416,7 @@ fig = px.line(
     y="value",
     color="variable",
     color_discrete_sequence=["teal", "green", "coral", "navy"],
-    title=f"Corona virus (COVID 19) en Colombia - {colombia.iloc[-1,0]}",
+    title=f"Corona virus (COVID 19) en Colombia - {colombia.iloc[-1, 0]}",
 )
 # Indicador de numero total de confirmados
 fig.add_indicator(

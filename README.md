@@ -1,6 +1,6 @@
 # Data analysis notebooks with python
 
-[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/charliermarsh/ruff)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
@@ -13,8 +13,8 @@ Jose Ricardo Zapata - <https://joserzapata.github.io/>
 [![Invitame a un Cafe](https://img.buymeacoffee.com/button-api/?text=Invítame+a+un+Café&emoji=&slug=joserzapata&button_colour=328cc1&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/joserzapata)
 
 - Covid data plots with ploty
-  - [Notebook](https://github.com/JoseRZapata/Data_analysis_notebooks/blob/main/notebooks/01-Covid19_visualization/01-Covid19_Visualizacion_es.ipynb)
-  - [Blog post](https://joserzapata.github.io/post/covid19-visualizacion/)
+    - [Notebook](https://github.com/JoseRZapata/Data_analysis_notebooks/blob/main/notebooks/01-Covid19_visualization/01-Covid19_Visualizacion_es.ipynb)
+    - [Blog post](https://joserzapata.github.io/post/covid19-visualizacion/)
 
 ## Repo cookiecutter Template
 
@@ -43,9 +43,6 @@ data-science-project-template - <https://github.com/JoseRZapata/data-science-pro
 ├── docs                                # documentation for your project
 ├── .editorconfig                       # editor configuration
 ├── .github                             # github configuration
-│   ├── actions
-│   │   └── python-poetry-env
-│   │       └── action.yml              # github action to setup python environment
 │   ├── dependabot.md                   # github action to update dependencies
 │   ├── pull_request_template.md        # template for pull requests
 │   └── workflows                       # github actions workflows
@@ -60,7 +57,7 @@ data-science-project-template - <https://github.com/JoseRZapata/data-science-pro
 │   ├── notebook_template.ipynb         # template for notebooks
 │   └── README.md                       # information about the notebooks
 ├── .pre-commit-config.yaml             # configuration for pre-commit hooks
-├── pyproject.toml                      # dependencies for poetry
+├── pyproject.toml                      # dependencies for the project
 ├── README.md                           # description of your project
 ├── src                                 # source code for use in this project
 ├── tests                               # test code for your project
@@ -77,34 +74,4 @@ This project was generated from [@JoseRZapata]'s [data science project template]
 ---
 [@JoseRZapata]: https://github.com/JoseRZapata
 
-[bandit]: https://github.com/PyCQA/bandit
-[codecov]: https://codecov.io/
-[Cookiecutter]:https://cookiecutter.readthedocs.io/en/stable/
-[coverage.py]: https://coverage.readthedocs.io/
-[Cruft]: https://cruft.github.io/cruft/
 [data science project template]: https://github.com/JoseRZapata/data-science-project-template
-[Data structure]: Data_analysis_notebooks/data/README.md
-[deepcheck]:https://deepcheck.io/
-[dependabot]: https://github.com/dependabot/dependabot-core
-[depy]:https://fpgmaas.github.io/deptry/
-[DVC]:https://dvc.org/
-[github actions]: https://github.com/features/actions
-[hydra]: https://hydra.cc/
-[Jupyter]:https://jupyter.org/
-[Makefile]: https://www.gnu.org/software/make/manual/make.html
-[MlFlow]:https://www.mlflow.org/
-[Mypy]: http://mypy-lang.org/
-[Notebook template]: Data_analysis_notebooks/notebooks/notebook_template.ipynb
-[NumPy]:https://numpy.org/
-[OmegaConf]: https://omegaconf.readthedocs.io/en/latest/
-[Pandas]:https://pandas.pydata.org/
-[pandera]:(https://pandera.readthedocs.io/en/stable/)
-[Poetry]: https://python-poetry.org/
-[pre-commit]: https://pre-commit.com/
-[Pull Request template]: Data_analysis_notebooks/.github/pull_request_template.md
-[Pyenv]: https://github.com/pyenv/pyenv
-[pypi]: https://pypi.org/
-[Pytest]: https://docs.pytest.org/en/latest/
-[pyupgrade]: https://github.com/asottile/pyupgrade
-[Ruff]: https://docs.astral.sh/ruff/
-[scikit-learn]:https://scikit-learn.org/

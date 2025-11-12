@@ -17,7 +17,7 @@ Documentation = "https://JoseRZapata.github.io/Data_analysis_notebooks"
 [dependency-groups]
 dev = [
     "pre-commit>=4.1.0",
-    "pytest>=8.3.4,<9",
+    "pytest>=8.3.4,<10",
     "pytest-cov>=6.0.0,<8",
     "pytest-mock>=3.14.0,<4",
     "cruft[pyproject]>=2.16.0,<3",

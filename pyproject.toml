@@ -3,7 +3,7 @@ name = "Data_analysis_notebooks"
 version = "0.2.0"
 description = "Data analysis notebooks with python"
 authors = [{ name = "Jose R. Zapata", email = "https://joserzapata.github.io/" }]
-requires-python = "~=3.11"
+requires-python = ">=3.11"
 readme = "README.md"
 dependencies = [
     "numpy>=2.2.1",
@@ -16,9 +16,9 @@ Documentation = "https://JoseRZapata.github.io/Data_analysis_notebooks"
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.1.0",
-    "pytest>=8.3.4,<10",
-    "pytest-cov>=6.0.0,<8",
+    "pre-commit>=4.5.1",
+    "pytest>=9.0.2,<10",
+    "pytest-cov>=7.0.0,<8",
     "pytest-mock>=3.14.0,<4",
     "cruft[pyproject]>=2.16.0,<3",
     "jupyter>=1.1.1",

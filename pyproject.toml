@@ -6,8 +6,8 @@ authors = [{ name = "Jose R. Zapata", email = "https://joserzapata.github.io/" }
 requires-python = ">=3.11"
 readme = "README.md"
 dependencies = [
-    "numpy>=2.2.1",
-    "pandas>=2.2.3",
+    "numpy>=2.4.0",
+    "pandas>=2.3.3",
 ]
 
 [project.urls]
@@ -19,10 +19,10 @@ dev = [
     "pre-commit>=4.5.1",
     "pytest>=9.0.2,<10",
     "pytest-cov>=7.0.0,<8",
-    "pytest-mock>=3.14.0,<4",
+    "pytest-mock>=3.15.1,<4",
     "cruft[pyproject]>=2.16.0,<3",
     "jupyter>=1.1.1",
-    "plotly>=5.24.1",
+    "plotly>=6.5.0",
 ]
 
 [tool.uv]

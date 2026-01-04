@@ -2,13 +2,13 @@
 
 ####----Basic configurations----####
 
-install: ## Install libs with poetry and pre-commit
-	@echo "🚀 Creating virtual environment using pyenv and poetry"
+install_env: ## Install libs with UV and pre-commit
+	@echo "🚀 Creating virtual environment using UV"
 	uv sync --all-groups
 	@echo "🚀 Installing pre-commit..."
 	uv run pre-commit install
 	@echo "💻 Activate virtual environment..."
-	@source .venv/bin/activate
+	@bash -c "source .venv/bin/activate"
 
 init_git: ## Initialize git repository
 	@echo "🚀 Initializing local git repository..."
@@ -35,6 +35,10 @@ test_verbose: ## Test the code with pytest and coverage in verbose mode
 	@echo "🚀 Testing code: Running pytest in verbose mode"
 	@uv run pytest --no-header -v --cov
 
+test_coverage: ## Test coverage report coverage.xml
+	@echo "🚀 Testing code: Running pytest with coverage"
+	@uv run pytest --cov --cov-report xml:coverage.xml
+
 ####----Pre-commit----####
 pre-commit_update: ## Update pre-commit hooks
 	@echo "🚀 Updating pre-commit hooks..."
@@ -47,6 +51,22 @@ pre-commit_update: ## Update pre-commit hooks
 clean_env: ## Clean .venv virtual environment
 	@echo "🚀 Cleaning the environment..."
 	@[ -d .venv ] && rm -rf .venv || echo ".venv directory does not exist"
+
+####----Git----####
+switch_main: ## Switch to main branch and pull
+	@echo "🚀 Switching to main branch..."
+	@git switch main
+	@git pull
+
+clean_branchs: ## Clean local branches already merged on the remote
+	@echo "🚀 Cleaning up merged branches..."
+	@git fetch -p
+	@for branch in $$(git for-each-ref --format '%(refname:short)' refs/heads/ | grep -v '^\*' | grep -v ' main$$'); do \
+		if ! git show-ref --quiet refs/remotes/origin/$$branch; then \
+			echo "Deleting local branch $$branch"; \
+			git branch -D $$branch; \
+		fi \
+	done
 
 ####----Checks----####
 check: ## Run code quality tools with pre-commit hooks.

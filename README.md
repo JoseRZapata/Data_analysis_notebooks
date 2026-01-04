@@ -8,6 +8,10 @@
 [![Test](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/JoseRZapata/Data_analysis_notebooks/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks/graph/badge.svg?token=27YGHC6I19)](https://codecov.io/gh/JoseRZapata/Data_analysis_notebooks)
 
+This is a data science project template created with [Cookiecutter] to help you start your next data science or machine learning project quickly and efficiently. It includes a well-organized folder structure, essential tools for code quality, testing, and documentation, and follows best practices in the industry.
+
+Using the data science project template <https://github.com/JoseRZapata/data-science-project-template>
+
 Jose Ricardo Zapata - <https://joserzapata.github.io/>
 
 [![Invitame a un Cafe](https://img.buymeacoffee.com/button-api/?text=Invítame+a+un+Café&emoji=&slug=joserzapata&button_colour=328cc1&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/joserzapata)
@@ -23,6 +27,9 @@ This repository uses the:
 data-science-project-template - <https://github.com/JoseRZapata/data-science-project-template>
 
 ## 🗃️ Project structure
+
+- [Data structure]
+- [Pipelines based on Feature/Training/Inference Pipelines](https://www.hopsworks.ai/post/mlops-to-ml-systems-with-fti-pipelines)
 
 ```bash
 .
@@ -74,4 +81,6 @@ This project was generated from [@JoseRZapata]'s [data science project template]
 ---
 [@JoseRZapata]: https://github.com/JoseRZapata
 
+[Cookiecutter]: https://github.com/cookiecutter/cookiecutter
 [data science project template]: https://github.com/JoseRZapata/data-science-project-template
+[Data structure]: https://github.com/JoseRZapata/data-science-project-template/blob/main/Data_analysis_notebooks/data/README.md

@@ -1,11 +1,9 @@
 {
   "recommendations": [
-    "alefragnani.project-manager",
     "charliermarsh.ruff",
     "davidanson.vscode-markdownlint",
     "editorconfig.editorconfig",
     "github.copilot-chat",
-    "github.vscode-github-actions",
     "GitHub.vscode-pull-request-github",
     "KevinRose.vsc-python-indent",
     "mechatroner.rainbow-csv",
@@ -21,6 +19,7 @@
     "streetsidesoftware.code-spell-checker",
     "tamasfe.even-better-toml",
     "usernamehw.errorlens",
-    "vscode-icons-team.vscode-icons"
+    "vscode-icons-team.vscode-icons",
+    "vivaxy.vscode-conventional-commits"
   ]
 }
